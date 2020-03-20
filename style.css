@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+@font-face{
+    font-family:'poppins';
+    src:url(/fonts/poppins/Poppins-Light.ttf);
+    font-weight: 100,600;
+}
+
+.container{
+    height:15vh ;
+    background-color: rgb(209, 207, 207);
+}
+
+
+#brand{
+    float: left;
+    padding-left: 20px;
+}
+#brand h1{
+    font-weight: 600;
+}
+#navbar{
+    float: left;
+    margin: 20px 20px 0 20px;
+}
+
+#navbar ul{
+  list-style: none;
+position: relative;
+}
+
+#navbar ul li{
+    display: inline;
+
+}
+
+#navbar ul li a{
+    width:50%;
+    color: rgb(83,83,83);
+    text-decoration: none;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+#navbar ul li a:hover{
+color: white;
+}
+#searchBox{
+    float: right;
+    margin:20px 20px 0 20px;
+    padding: 15px;
+    width: 350px;
+
+}
+.text{
+    float: left;
+    width: 170px;
+    padding: 5px;
+    font-size: 13px;
+    color: rgb(83,83,83);
+    border: 1 solid grey;
+    background: white url("https://img.icons8.com/pastel-glyph/24/000000/search--v1.png")  right center no-repeat;
+}
+
+.submit{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background:linear-gradient(rgb(235,235,235),rgb(104,119,150)) ;
+    font-size:12px;
+    outline: none;
+font-family: poppins;}
+
+#banner{
+    background:url(images/cover.jpg);
+    
+    background-size:cover;
+    ;background-position:top ;
+    height: 100vh;
+}
+    #banner .content{
+        padding: 30px;
+        width: 40%;
+
+}
+#banner h4{
+    font-weight: 100;
+}
+
+#button{
+    margin: 0 30px;
+    
+}
+
+#button .button {margin:5px;
+    padding:10px 20px;
+    text-decoration: none;
+    color:rgb(83,83,83) ;
+    border:1 solid #ffffff;
+    background-color: white;
+    font-size:15px;
+    border-radius: 10px;
+}
+#button a{
+    padding:100px;
+}
+
+#button a:hover{
+    background-color:#E6E6E8;
+   font-weight: 600;
+    font-size: 18px;
+    transition:.2s ease;
+}
+
+.wrapper-inner{
+    width: 100%;
+    background-color:  rgb(143, 140, 140);
+}
+.wrapper-inner ul li{
+  float: left;
+  list-style: none;
+  margin:0 70px;
+  padding: 50px;
+}
+.wrapper-inner ul li a{
+  float: left;
+  text-decoration: none;
+  color: black;
+  
+}   
+.social-name{font-size: 30px;
+}
