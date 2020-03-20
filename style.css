@@ -85,10 +85,11 @@ font-family: poppins;}
     #banner .content{
         padding: 30px;
         width: 40%;
+       
 
 }
 #banner h4{
-    font-weight: 100;
+    font-weight: 100; text-align: justify;
 }
 
 #button{
