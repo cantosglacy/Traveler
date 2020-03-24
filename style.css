@@ -56,6 +56,16 @@ display: none;
  flex-direction: column;
 }
 
+.details{
+    box-shadow: 0 5px 15p black;
+    background-color:rgb(229,229,231,.4) ;
+    text-align: center;
+    font-size: 1.2em;
+    color:white;
+    padding: .25em;
+    font-weight:bold;
+}
+
 
 }
 @font-face{
