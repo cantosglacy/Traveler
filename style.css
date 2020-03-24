@@ -1,10 +1,63 @@
+*{box-sizing: border-box;}
 body{
     margin: 0;
     padding: 0;
     font-family: poppins;
-    width: 1350px;
+ 
+}
+@media screen and (max-width:1020px){
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+.blank{
+display: none;
+    
+  }
+  .details{
+      box-shadow: 0 5px 15p black;
+      background-color:rgb(229,229,231,.4) ;
+      text-align: center;
+      font-size: 1.2em;
+      color: #000;
+      padding: 1.25em;
+      font-weight:bold;
+  }
 }
 
+
+@media screen and (max-width:500px){
+#button{
+    justify-content: center;
+    align-content: center;
+}
+ #button .button-wrapper{  
+   display: flex;
+   flex-direction: column;
+   
+   align-items: center;
+  }
+
+ #button .button-wrapper a{
+     text-align: center;
+     padding: 1em;
+     margin: .2em;
+     margin-bottom: 0;
+ }
+}
+
+@media screen and (max-width:360px){
+.blank{
+ display: none;}
+ #button .button-wrapper{  
+ display: flex;
+ flex-direction: column;
+}
+
+
+}
 @font-face{
     font-family:'poppins';
     src:url(/fonts/poppins/Poppins-Light.ttf);
@@ -12,54 +65,86 @@ body{
 }
 
 .container{
-    height:15vh ;
-    background-color: rgb(209, 207, 207);
+    
+   
 }
 
-
-#brand{
-    float: left;
+.wrapper{
+    background-color: #D1CFCF;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+#brand{flex:1.2;
+ 
+    display: inline;
     padding-left: 20px;
 }
 #brand h1{
+   
     font-weight: 600;
 }
 #navbar{
-    float: left;
-    margin: 20px 20px 0 20px;
+ 
+    display: flex;
+    flex:3;
+    align-items: center;
+    justify-content: center;
+   
+ 
 }
 
 #navbar ul{
+ 
   list-style: none;
-position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  
 }
 
+    
 #navbar ul li{
+  
     display: inline;
-
+  
 }
 
 #navbar ul li a{
-    width:50%;
+  
     color: rgb(83,83,83);
     text-decoration: none;
-    padding-left: 30px;
+    padding: 20px;
     text-transform: uppercase;
 }
+
 #navbar ul li a:hover{
 color: white;
 }
+
+
 #searchBox{
-    float: right;
-    margin:20px 20px 0 20px;
-    padding: 15px;
-    width: 350px;
+    display: flex;
+    
+  
+  justify-content: center;
+  align-items: center;
+    flex: 1;
 
 }
+.button{
+    flex:1;
+}
+
+.box{;
+ 
+    text-align:right;
+    margin:1em;
+    flex:1;
+}
 .text{
-    float: left;
-    width: 170px;
-    padding: 5px;
+  
+
     font-size: 13px;
     color: rgb(83,83,83);
     border: 1 solid grey;
@@ -67,8 +152,7 @@ color: white;
 }
 
 .submit{
-    float: right;
-    padding: 5px;
+   
     font-weight: bold;
     color: white;
     background:linear-gradient(rgb(235,235,235),rgb(104,119,150)) ;
@@ -77,38 +161,74 @@ color: white;
 font-family: poppins;}
 
 #banner{
-    background:url(images/cover.jpg);
-    
+    background:url(images/cover.jpg); 
+    margin:0;
+    padding:0;
     background-size:cover;
-    ;background-position:top ;
-    height: 100vh;
+    background-position:top ;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    
 }
-    #banner .content{
-        padding: 30px;
-        width: 40%;
-       
+#banner .content{
+        display: flex;
+      margin-bottom: 5em;
+        padding: 1em 2em;
+} 
 
+.details{
+    flex: 2 ;
+  
+   margin: 0em 1em;
+}
+.blank{
+   
+
+ flex: 3;
+}
+
+.details h4{
+    
+    text-align:justify;
 }
 #banner h4{
+    
     font-weight: 100; text-align: justify;
+    
+
 }
 
 #button{
-    margin: 0 30px;
-    
+   display: flex;
+  
+  
+ 
+}
+#button .button-wrapper{
+ 
+    margin-left:3em;
+    margin-top:.2em;
+    margin-bottom: 10em;
+
 }
 
-#button .button {margin:5px;
-    padding:10px 20px;
+    #button .button {
+      
+   
+    text-align: center;
     text-decoration: none;
     color:rgb(83,83,83) ;
     border:1 solid #ffffff;
-    background-color: white;
+    background-color: rgb(143, 140, 140);
     font-size:15px;
     border-radius: 10px;
+    margin: 0 .5em;
+    
 }
 #button a{
-    padding:100px;
+    padding:0.5em;
+   
 }
 
 #button a:hover{
@@ -118,18 +238,26 @@ font-family: poppins;}
     transition:.2s ease;
 }
 
-.wrapper-inner{
-    width: 100%;
+.wrapper-inner{display: flex;
+    flex-direction: column;
+  margin-top:-1em;
     background-color:  rgb(143, 140, 140);
 }
+.site-social-links{
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+
 .wrapper-inner ul li{
-  float: left;
+ flex: 1;
   list-style: none;
-  margin:0 70px;
-  padding: 50px;
+  
 }
 .wrapper-inner ul li a{
-  float: left;
+  
   text-decoration: none;
   color: black;
   
